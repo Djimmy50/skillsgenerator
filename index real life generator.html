@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Real Life Skills Generator — Free TikTok Content Ideas</title>
+<meta name="description" content="Get free TikTok hooks, scripts & captions for the Real Life Skills niche. AI-powered content ideas in seconds." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1a18;
+    --ink2: #5a5a52;
+    --ink3: #9a9a90;
+    --paper: #f7f5f0;
+    --card: #ffffff;
+    --accent: #e8461a;
+    --accent2: #2563eb;
+    --border: rgba(26,26,24,0.1);
+    --border2: rgba(26,26,24,0.18);
+    --serif: 'Instrument Serif', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+    --radius: 12px;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 2rem; border-bottom: 1px solid var(--border);
+    background: var(--card); position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo { font-family: var(--serif); font-size: 18px; color: var(--ink); text-decoration: none; }
+  .nav-logo span { color: var(--accent); font-style: italic; }
+  .nav-cta { font-size: 13px; font-weight: 600; padding: 7px 16px; background: var(--ink); color: #fff;
+    border-radius: 99px; text-decoration: none; transition: opacity .2s; }
+  .nav-cta:hover { opacity: .8; }
+
+  /* HERO */
+  .hero {
+    max-width: 720px; margin: 0 auto; padding: 5rem 2rem 3rem;
+    text-align: center;
+  }
+  .hero-tag {
+    display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent);
+    padding: 4px 14px; border-radius: 99px; margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.15; color: var(--ink); margin-bottom: 1rem;
+  }
+  .hero h1 em { color: var(--accent); font-style: italic; }
+  .hero p { font-size: 17px; color: var(--ink2); max-width: 500px; margin: 0 auto 2.5rem; }
+
+  /* AFFILIATE BANNER */
+  .affiliate-banner {
+    max-width: 720px; margin: 0 auto 2rem; padding: 0 2rem;
+  }
+  .aff-inner {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    border-radius: var(--radius); padding: 1rem 1.5rem;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .aff-text { color: #fff; }
+  .aff-text strong { display: block; font-size: 14px; font-weight: 600; }
+  .aff-text span { font-size: 12px; opacity: .8; }
+  .aff-btn {
+    font-size: 13px; font-weight: 600; background: #fff; color: #1e3a8a;
+    padding: 7px 18px; border-radius: 99px; text-decoration: none;
+    white-space: nowrap; transition: opacity .2s;
+  }
+  .aff-btn:hover { opacity: .9; }
+
+  /* GENERATOR */
+  .generator {
+    max-width: 720px; margin: 0 auto; padding: 0 2rem 4rem;
+  }
+  .gen-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem;
+  }
+  .gen-card h2 { font-size: 15px; font-weight: 600; margin-bottom: 1.25rem; color: var(--ink); }
+
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.25rem; }
+  .badge {
+    font-size: 13px; padding: 6px 14px; border-radius: 99px;
+    border: 1px solid var(--border2); color: var(--ink2); background: var(--paper);
+    cursor: pointer; transition: all .15s; user-select: none;
+  }
+  .badge:hover { border-color: var(--ink); color: var(--ink); }
+  .badge.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+  .row { display: flex; gap: 10px; flex-wrap: wrap; }
+  input[type=text], select {
+    font-family: var(--sans); font-size: 14px; padding: 0 14px; height: 42px;
+    border: 1px solid var(--border2); border-radius: var(--radius);
+    background: var(--paper); color: var(--ink); outline: none;
+    transition: border .15s; flex: 1; min-width: 160px;
+  }
+  input[type=text]:focus, select:focus { border-color: var(--ink); }
+  .btn {
+    font-family: var(--sans); font-size: 14px; font-weight: 600; height: 42px;
+    padding: 0 22px; border-radius: var(--radius); cursor: pointer;
+    border: 1px solid var(--border2); background: var(--paper); color: var(--ink);
+    transition: all .15s; white-space: nowrap;
+  }
+  .btn:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .btn.primary:hover { opacity: .85; }
+
+  /* EMAIL GATE */
+  .email-gate {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 2.5rem 2rem; text-align: center;
+    margin-bottom: 1.5rem; display: none;
+  }
+  .email-gate h3 { font-family: var(--serif); font-size: 1.6rem; margin-bottom: .5rem; }
+  .email-gate p { font-size: 14px; color: var(--ink2); margin-bottom: 1.5rem; }
+  .email-row { display: flex; gap: 8px; max-width: 400px; margin: 0 auto; }
+  .email-row input { flex: 1; }
+
+  /* RESULTS */
+  .results { display: flex; flex-direction: column; gap: 14px; }
+  .idea-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1.25rem 1.5rem;
+    animation: fadeUp .3s ease both;
+  }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+  .idea-card:nth-child(2) { animation-delay: .08s; }
+  .idea-card:nth-child(3) { animation-delay: .16s; }
+  .idea-type {
+    display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .06em;
+    text-transform: uppercase; padding: 3px 10px; border-radius: 99px; margin-bottom: 10px;
+  }
+  .type-hook { background: #eff6ff; color: #1d4ed8; }
+  .type-caption { background: #f0fdf4; color: #15803d; }
+  .type-script { background: #fff7ed; color: #c2410c; }
+  .idea-title { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .idea-body { font-size: 13px; color: var(--ink2); line-height: 1.7; white-space: pre-wrap; }
+  .idea-footer { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .idea-footer .btn { font-size: 12px; height: 32px; padding: 0 14px; }
+
+  /* PRO UPSELL */
+  .pro-banner {
+    background: var(--ink); color: #fff; border-radius: 16px;
+    padding: 1.75rem 2rem; text-align: center; display: none; margin-top: 1.5rem;
+  }
+  .pro-banner h3 { font-family: var(--serif); font-size: 1.4rem; margin-bottom: .5rem; }
+  .pro-banner p { font-size: 13px; opacity: .75; margin-bottom: 1.25rem; }
+  .pro-banner a {
+    display: inline-block; background: var(--accent); color: #fff;
+    font-size: 14px; font-weight: 600; padding: 10px 24px;
+    border-radius: 99px; text-decoration: none; transition: opacity .2s;
+  }
+  .pro-banner a:hover { opacity: .85; }
+
+  .loading { text-align: center; padding: 2.5rem; color: var(--ink3); font-size: 14px; }
+  .loading::after { content: ''; display: inline-block; width: 18px; height: 18px;
+    border: 2px solid var(--border2); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin .7s linear infinite; margin-left: 8px; vertical-align: middle; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .err { color: var(--accent); font-size: 13px; padding: 1rem; text-align: center; }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border); padding: 2rem;
+    text-align: center; font-size: 12px; color: var(--ink3);
+  }
+  footer a { color: var(--ink2); text-decoration: none; }
+  footer a:hover { color: var(--ink); }
+
+  @media (max-width: 500px) {
+    .hero { padding: 3rem 1.25rem 2rem; }
+    .generator, .affiliate-banner { padding-left: 1.25rem; padding-right: 1.25rem; }
+    nav { padding: 1rem 1.25rem; }
+    .email-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#">Real Life Skills <span>Generator</span></a>
+  <a class="nav-cta" href="https://gumroad.com" target="_blank" rel="noopener">Go Pro →</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-tag">Free TikTok Tool</span>
+  <h1>Content ideas for the skills <em>nobody taught you</em></h1>
+  <p>Get AI-generated hooks, scripts & captions for your niche — free, forever.</p>
+</div>
+
+<!-- AFFILIATE BANNER -->
+<div class="affiliate-banner">
+  <div class="aff-inner">
+    <div class="aff-text">
+      <strong>💰 Recommended: PocketGuard — stop overspending instantly</strong>
+      <span>The budgeting app your followers actually need. Works on Android, iOS & web.</span>
+    </div>
+    <a class="aff-btn" href="https://pocketguard.com" target="_blank" rel="noopener sponsored">Try free →</a>
+  </div>
+</div>
+
+<div class="generator">
+
+  <div class="gen-card" id="mainCard">
+    <h2>Choose your topic</h2>
+    <div class="badges" id="topicBadges">
+      <span class="badge active" data-val="money & budgeting">💵 Money & budgeting</span>
+      <span class="badge" data-val="taxes & government forms">🧾 Taxes</span>
+      <span class="badge" data-val="credit scores & loans">💳 Credit & loans</span>
+      <span class="badge" data-val="job hunting & career growth">💼 Career</span>
+      <span class="badge" data-val="cooking & meal prep on a budget">🍳 Cooking</span>
+      <span class="badge" data-val="renting an apartment for the first time">🏠 Renting</span>
+      <span class="badge" data-val="social skills & relationships">🤝 Relationships</span>
+      <span class="badge" data-val="health insurance & medical bills">🏥 Health</span>
+    </div>
+
+    <div class="row" style="margin-bottom:1rem;">
+      <input type="text" id="customTopic" placeholder="Or type your own topic..." />
+      <select id="formatPick">
+        <option value="full package (hook + script outline + caption with hashtags)">Full package</option>
+        <option value="viral hook only">Hook only</option>
+        <option value="caption with hashtags only">Caption + hashtags</option>
+        <option value="30-second script outline">Script outline</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <button class="btn primary" onclick="handleGenerate()">Generate free ideas →</button>
+      <button class="btn" onclick="clearAll()">Clear</button>
+    </div>
+  </div>
+
+  <!-- EMAIL GATE -->
+  <div class="email-gate" id="emailGate">
+    <h3>Unlock your content ideas</h3>
+    <p>Enter your email to get free ideas delivered — plus weekly content tips.</p>
+    <div class="email-row">
+      <input type="email" id="emailInput" placeholder="you@email.com" />
+      <button class="btn primary" onclick="submitEmail()">Get ideas →</button>
+    </div>
+    <p style="font-size:11px; color:var(--ink3); margin-top:.75rem;">No spam. Unsubscribe any time.</p>
+  </div>
+
+  <div id="output"></div>
+
+  <!-- PRO UPSELL -->
+  <div class="pro-banner" id="proBanner">
+    <h3>Want unlimited ideas + more formats?</h3>
+    <p>Upgrade to Pro for batch generation, viral trend matching, and Canva caption templates.</p>
+    <a href="https://gumroad.com" target="_blank" rel="noopener">Upgrade to Pro — $7/month →</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>Made for content creators in the "Real Life Skills" niche &nbsp;·&nbsp;
+    <a href="https://gumroad.com" target="_blank">Pro upgrade</a> &nbsp;·&nbsp;
+    <a href="mailto:hello@example.com">Contact</a>
+  </p>
+  <p style="margin-top:.5rem;">Affiliate links on this page may earn a small commission at no cost to you.</p>
+</footer>
+
+<script>
+  let activeTopic = 'money & budgeting';
+  let freeUses = parseInt(localStorage.getItem('freeUses') || '0');
+  let emailSubmitted = localStorage.getItem('emailSubmitted') === 'true';
+  const FREE_LIMIT = 3;
+  let pendingGenerate = false;
+
+  document.querySelectorAll('#topicBadges .badge').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('#topicBadges .badge').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      activeTopic = b.dataset.val;
+      document.getElementById('customTopic').value = '';
+    });
+  });
+
+  document.getElementById('customTopic').addEventListener('input', function() {
+    if (this.value.trim()) {
+      document.querySelectorAll('#topicBadges .badge').forEach(x => x.classList.remove('active'));
+      activeTopic = this.value.trim();
+    }
+  });
+
+  function handleGenerate() {
+    if (!emailSubmitted && freeUses >= FREE_LIMIT) {
+      document.getElementById('emailGate').style.display = 'block';
+      document.getElementById('emailGate').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      pendingGenerate = true;
+      return;
+    }
+    generateIdeas();
+  }
+
+  function submitEmail() {
+    const email = document.getElementById('emailInput').value.trim();
+    if (!email || !email.includes('@')) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+    emailSubmitted = true;
+    localStorage.setItem('emailSubmitted', 'true');
+    document.getElementById('emailGate').style.display = 'none';
+    if (pendingGenerate) { pendingGenerate = false; generateIdeas(); }
+  }
+
+  function clearAll() {
+    document.getElementById('output').innerHTML = '';
+    document.getElementById('proBanner').style.display = 'none';
+  }
+
+  async function generateIdeas() {
+    const custom = document.getElementById('customTopic').value.trim();
+    const topic = custom || activeTopic;
+    const format = document.getElementById('formatPick').value;
+    const out = document.getElementById('output');
+
+    freeUses++;
+    localStorage.setItem('freeUses', freeUses);
+
+    out.innerHTML = '<div class="loading">Generating your ideas</div>';
+    document.getElementById('proBanner').style.display = 'none';
+
+    const prompt = `You are a viral TikTok content strategist for a faceless page called "Real Life Skills Nobody Taught You" targeting young adults aged 18-30.
+
+Generate 3 high-quality content ideas for the topic: "${topic}".
+Format requested: "${format}"
+
+For each idea return a JSON object with:
+- type: one of "hook", "caption", or "script"
+- title: punchy short title max 8 words
+- body: the actual content (make it punchy, relatable, and shareable for TikTok)
+
+Return ONLY a valid JSON array of 3 objects. No markdown, no backticks, no preamble.`;
+
+    try {
+      const res = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          messages: [{ role: "user", content: prompt }]
+        })
+      });
+
+      const data = await res.json();
+      const raw = (data.content || []).map(i => i.text || '').join('');
+      const clean = raw.replace(/```json|```/g, '').trim();
+      const ideas = JSON.parse(clean);
+
+      out.innerHTML = '<div class="results">' + ideas.map((idea, i) => {
+        const tc = idea.type === 'hook' ? 'type-hook' : idea.type === 'caption' ? 'type-caption' : 'type-script';
+        const tl = idea.type.charAt(0).toUpperCase() + idea.type.slice(1);
+        const safeBody = (idea.body || '').replace(/`/g, '\\`').replace(/\$/g, '\\$');
+        return `<div class="idea-card" style="animation-delay:${i * 0.08}s">
+          <span class="idea-type ${tc}">${tl}</span>
+          <p class="idea-title">${idea.title}</p>
+          <p class="idea-body">${idea.body}</p>
+          <div class="idea-footer">
+            <button class="btn" onclick="copyIdea(this, \`${safeBody}\`)">Copy</button>
+            <button class="btn" onclick="location.href='mailto:?subject=Content idea&body=${encodeURIComponent(idea.title + '\n\n' + idea.body)}'">Share</button>
+          </div>
+        </div>`;
+      }).join('') + '</div>';
+
+      if (freeUses >= FREE_LIMIT && !emailSubmitted) {
+        document.getElementById('proBanner').style.display = 'block';
+      } else if (freeUses >= FREE_LIMIT * 2) {
+        document.getElementById('proBanner').style.display = 'block';
+      }
+
+    } catch(e) {
+      out.innerHTML = '<p class="err">Something went wrong — please try again.</p>';
+    }
+  }
+
+  function copyIdea(btn, text) {
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = 'Copy', 2000);
+    });
+  }
+</script>
+</body>
+</html>
