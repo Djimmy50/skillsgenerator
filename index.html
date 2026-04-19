@@ -349,18 +349,21 @@ For each idea return a JSON object with:
 Return ONLY a valid JSON array of 3 objects. No markdown, no backticks, no preamble.`;
 
     try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer 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"
+        },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
+          model: "llama3-8b-8192",
           max_tokens: 1000,
           messages: [{ role: "user", content: prompt }]
         })
       });
 
       const data = await res.json();
-      const raw = (data.content || []).map(i => i.text || '').join('');
+      const raw = data.choices?.[0]?.message?.content || '';
       const clean = raw.replace(/```json|```/g, '').trim();
       const ideas = JSON.parse(clean);
 
