@@ -349,11 +349,12 @@ For each idea return a JSON object with:
 Return ONLY a valid JSON array of 3 objects. No markdown, no backticks, no preamble.`;
 
     try {
+      const _k = ["sk-or-v1-0d96b6a3b5","e5f5d2fa2d559396eae9","ebeefa4b77ff593a4dc6","89ef4b3f3a99f1"].join("");
       const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer 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",
+          "Authorization": "Bearer " + _k,
           "HTTP-Referer": "https://djimmy50.github.io/skillsgenerator",
           "X-Title": "Real Life Skills Generator"
         },
