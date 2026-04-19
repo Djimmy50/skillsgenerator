@@ -349,14 +349,16 @@ For each idea return a JSON object with:
 Return ONLY a valid JSON array of 3 objects. No markdown, no backticks, no preamble.`;
 
     try {
-      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer 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"
+          "Authorization": "Bearer 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",
+          "HTTP-Referer": "https://djimmy50.github.io/skillsgenerator",
+          "X-Title": "Real Life Skills Generator"
         },
         body: JSON.stringify({
-          model: "llama3-8b-8192",
+          model: "mistralai/mistral-7b-instruct:free",
           max_tokens: 1000,
           messages: [{ role: "user", content: prompt }]
         })
